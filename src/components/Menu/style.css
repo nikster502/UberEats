@@ -1,0 +1,23 @@
+.header-btn{
+    height: 40px;
+    width: 72px;
+    border: none;
+    margin-left: 10px;
+    border-radius: 2px;
+}
+.header-menu{
+    height: 72px;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.header-btn--white{
+    background: white;
+    border: 2px solid #F2F2F2;
+}
+.header-btn--black{
+    background: black;
+    color: white;
+}

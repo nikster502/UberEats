@@ -1,0 +1,115 @@
+.header_inputDelivery{
+    color:  #626262;
+    width: 85%;
+    border: none;
+    height: 40px;
+    border: 1px solid #E0E0E0;
+    padding-left: 30px;
+    font-size: 16px;
+    font-family: Roboto;
+    line-height : 24px;
+    font-style: normal;
+}
+.header_delivery{
+    display: flex;
+    justify-content:space-around;
+    position: relative;
+
+
+}
+.header_deliveryLocation{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    left: 5%;
+}
+.header_deliveryWhen{
+    border: 1px solid #E0E0E0;
+
+    border-radius: 2px;
+    width: 65px;
+    height: 40px;
+    padding-left: 10px;
+
+}
+.header_deliveryLabel{
+    color:#626262 ;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+.header_deliveryContainer{
+    display: flex;
+    justify-content: center;
+    padding-top: 48px;
+    width: 100%;
+
+}
+.header_deliveryСase{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+.header_deliveryСase__when{
+    padding-right: 10px;
+}
+.header_deliveryСase__to{
+    width: 70%
+
+}
+
+.header_inputDelivery--background{
+    background: #F2F2F2;
+}
+.deliveryContainerMenu{
+    padding-top: 20px;
+    display: none;
+}
+
+.deliveryContainerMenu_deliveryСase__when{
+
+}
+
+.deliveryContainerMenu_deliveryСase__to{
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.header_labelDeliverMenu{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+@media screen and (min-width:768px){
+    .header_deliveryСase__when {
+        padding-right: 0px;
+    }
+    .header_deliveryContainer{
+        display: none;
+        padding: 0;
+        width: 50%;
+    }
+    .deliveryContainerMenu{
+        display: flex;
+    }
+    .header_inputDelivery{
+        width: 250px;
+    }
+
+}
+@media screen and (min-width:580px){
+    .header_deliveryСase__when {
+        padding-right: 0px;
+    }
+    .header_deliveryContainer{
+        display: none;
+        padding: 0;
+        width: 50%;
+    }
+    .deliveryContainerMenu{
+        display: flex;
+    }
+
+}
