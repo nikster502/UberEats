@@ -20,3 +20,27 @@ body{
   background: white;
 }
 }
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+
+  color: #626262;
+  opacity: 0.5;
+
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #626262;
+  opacity: 0.5;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #626262;
+  opacity: 0.5;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #626262;
+  opacity: 0.5;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
