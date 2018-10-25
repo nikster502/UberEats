@@ -1,29 +1,27 @@
 import React, { Component } from "react";
 import classNames from "classnames";
 import "./style.css";
-// import logo from './img/logo.svg'
+import Store from "../Store"
 
-class Logo extends Component {
+
+class Stores extends Component {
 
     render() {
         const { logoProp, styleImg, href, ...other } = this.props;
-        var logo = "../img/logo.svg";
-        if(!!logoProp){
-            logo = logoProp
-        }
 
         const classes = classNames({
-            "form__image":  !styleImg,
+            "store-container":  true,
             [styleImg] : !!styleImg
 
         });
 
         return (
             <div className={classes}>
-                <a href='#'><img src={logo}/></a>
+                <Store IcoProp = "./img/appStore.svg"/>
+                <Store IcoProp = "./img/googlePlay.svg"/>
             </div>
         );
     }
 }
 
-export default Logo;
+export default Stores;

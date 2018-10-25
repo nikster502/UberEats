@@ -9,6 +9,7 @@
     "postcss-smart-import": "^0.7.6",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
+    "react-flexbox-grid": "^2.1.2",
     "react-responsive": "^5.0.0",
     "react-scripts": "2.0.4"
   },

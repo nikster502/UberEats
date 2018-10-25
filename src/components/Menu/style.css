@@ -22,7 +22,7 @@
 }
 
 .form__image{
-
+padding-left: 10px;
 }
 
 .menu-container{
@@ -32,7 +32,6 @@
     margin: auto;
     width: 100%;
     padding-right: 5px;
-    padding-left: 10px;
     max-width: 956px;
     margin: auto;
 }
@@ -47,7 +46,7 @@
 @media screen and (min-width:768px){
     .menu-container{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         margin: auto;
     }
