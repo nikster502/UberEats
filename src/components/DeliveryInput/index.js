@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import classNames from "classnames";
 import "./style.css";
-import location from './png/location.png'
+import location from './png/location.svg'
 const blurModifier = "input--hasValue";
 const focusModifier = "input--hasFocus";
 class DeliveryInput extends Component {
@@ -38,7 +38,7 @@ class DeliveryInput extends Component {
         const Comp = component;
 
         const classes = classNames(
-            "header_inputDelivery",
+
             {
                 [focusModifier]: isFocused,
                 [blurModifier]: !!value,

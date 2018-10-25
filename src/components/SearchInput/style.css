@@ -1,28 +1,27 @@
 .header_inputSearch{
     background: #F2F2F2;
-    color:  #626262;
-    width: 85%;
+    color:  black ;
+    width: 100%;
     border: none;
     height: 48px;
-    border-bottom: 1px solid #757575;
-    padding-left: 30px;
-    font-size: 16px;
-    font-family: Roboto;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.3);
+
     line-height : 24px;
-    opacity: 50%;
+    /*opacity: 50%;*/
     font-style: normal;
+    padding-left: 24px ;
 
 }
 .header_search{
+    display: flex;
     position: relative;
-    padding-top: 30px;
+    padding: 30px 5px 0 10px;
 }
 .header-searchLoup{
     position: absolute;
     display: flex;
     justify-content: flex-start;
-    height: 55px;
-    left: 5%;
+    height: 48px;
 }
 
 @media screen and (min-width:768px){
