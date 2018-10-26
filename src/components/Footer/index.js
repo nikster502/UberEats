@@ -6,10 +6,33 @@ import "./style.css";
 import ComboBox from '../ComboBox';
 import Socials from '../Socials';
 import Stores from '../Stores';
-
+import $ from "jquery";
 
 class Header extends Component {
     render() {
+        $(document).ready(function(){
+            $('.content').append('<a href="#" class="go-top" title="Вверх"><img class= "go-top_shape"src="./img/shape.svg" alt=""></a>');
+        });
+
+        $(function() {
+            $.fn.scrollToTop = function() {
+                $(this).hide().removeAttr("href");
+                if ($(window).scrollTop() >= "500") $(this).fadeIn("slow")
+                var scrollDiv = $(this);
+                $(window).scroll(function() {
+                    if ($(window).scrollTop() <= "500") $(scrollDiv).fadeOut("slow")
+                    else $(scrollDiv).fadeIn("slow")
+                });
+                $(this).click(function() {
+                    $("html, body").animate({scrollTop: 0},"slow")
+                })
+            }
+        });
+
+        $(function() {
+            $(".go-top").scrollToTop();
+        });
+
         const { children, color, ...other } = this.props;
 
 
