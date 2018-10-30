@@ -1,24 +1,24 @@
 import React, { Component } from "react";
 import classNames from "classnames";
 import "./style.css";
+import basket from './svg/basket.svg'
 
-class Submit extends Component {
+
+class Basket extends Component {
     render() {
-        const { children, color, ...other } = this.props;
-
+        const {children, color, ...other} = this.props;
 
         const classes = classNames({
             btn: true,
             "btn--color": color,
-
         });
-
         return (
-            <button className={classes} type='button' {...other}>
-                {children}
-            </button>
+                <div className='header_menu-basket'>
+                    <img src={basket} alt="корзина"/>
+                </div>
+
+
         );
     }
 }
-
-export default Submit;
+export default Basket;

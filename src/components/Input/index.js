@@ -30,7 +30,9 @@ class TextInput extends Component {
             valid,
             ...other
         } = this.props;
-        const classes = classNames( {
+        const classes = classNames(
+            "header_input",
+            {
             [className]: !!className,
             "input--valid": valid
         });

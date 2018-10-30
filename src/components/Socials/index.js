@@ -1,29 +1,28 @@
 import React, { Component } from "react";
 import classNames from "classnames";
 import "./style.css";
-// import logo from './img/logo.svg'
+import SocialIco from "../Social-icon"
 
-class Logo extends Component {
+
+class SocialIcon extends Component {
 
     render() {
         const { logoProp, styleImg, href, ...other } = this.props;
-        var logo = "../img/logo.svg";
-        if(!!logoProp){
-            logo = logoProp
-        }
 
         const classes = classNames({
-            "form__image":  !styleImg,
+            "socials-container":  true,
             [styleImg] : !!styleImg
 
         });
 
         return (
             <div className={classes}>
-                <a href='#'><img src={logo}/></a>
+                <SocialIco IcoProp = "./img/facebookIco.svg"/>
+                <SocialIco IcoProp = "./img/twiterIco.svg"/>
+                <SocialIco IcoProp = "./img/instagramIco.svg"/>
             </div>
         );
     }
 }
 
-export default Logo;
+export default SocialIcon;

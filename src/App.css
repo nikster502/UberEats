@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+
 }
 
 .App-logo {
@@ -21,12 +21,44 @@
 .App-link {
   color: #61dafb;
 }
-
+body{
+  max-width: 100%;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.go-top {
+  position: fixed;
+  bottom: 24px;
+  right: 16px;
+  text-align: center;
+  cursor:pointer;
+  display:none;
+  width: 64px;
+  height: 64px;
+  background:rgba(35%, 74%, 35%, 1);
+  line-height: 30px;
+
+}
+
+.go-top:hover {
+  background: rgba(35%, 74%, 35%, 0.8);
+}
+
+.go-top_shape{
+  margin-top: 30%;
+}
+
+@media screen and (min-width:768px) {
+  .go-top {
+    width: 80px;
+    height: 80px;
+
   }
 }

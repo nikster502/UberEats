@@ -8,16 +8,47 @@
 .header-menu{
     height: 72px;
     background: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
 }
 .header-btn--white{
     background: white;
-    border: 2px solid #F2F2F2;
+    border: 1px solid #F2F2F2;
 }
 .header-btn--black{
     background: black;
     color: white;
+}
+
+.form__image{
+padding-left: 10px;
+}
+
+.menu-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    padding-right: 5px;
+    max-width: 956px;
+    margin: auto;
+}
+.btn-group{
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width:768px){
+    .menu-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+
 }
