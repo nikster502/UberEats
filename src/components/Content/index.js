@@ -3,41 +3,36 @@ import classNames from "classnames";
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import "./style.css";
 import Dish from '../Dish';
-import products from './products.json';
+import {connect} from 'react-redux';
+import products from "./products";
 
-//http://localhost:3000/products.json
 
 
 class DishGrid extends Component {
     render() {
         const {  } = this.props;
 
-        const parsedJSON = JSON.parse(products);
-        console.log(parsedJSON)
-        // for (let i =0;i<parsedJSON.length;i++){
-        //     console.log(parsedJSON[i])
-        //
-        //
-        // }
+        // const parsedJSON = JSON.parse(products);
         const classes = classNames({
         });
-
+// console.log("products - ",JSON.parse(this.props.products))
         return (
                 <section className="content">
 
                     <h1 className="content-city">Moscow Restaurants</h1>
                     <Grid fluid>
                         <Row>
-                                {
-                                    parsedJSON.map(product =>{
-                                   return(<Dish
+                            {
+                                this.props.products.map((product,index) =>{
+                                    return(<Dish key = {index}
                                         srcImg= {product.urlImg}
                                         dishName ={product.productName}
                                         dishPrice ={product.price+" ₽ • Бургеры"}
                                         dishTime = "25 - 35 Min"
+                                                 indexBucket = {index}
                                     />);
-                                   })
-                                }
+                                })
+                            }
 
                         </Row>
                     </Grid>
@@ -46,4 +41,12 @@ class DishGrid extends Component {
     }
 }
 
-export default DishGrid;
+export default connect(
+    state => ({
+        products :state.products
+    }),
+    dispatch => ({
+
+
+    })
+)(DishGrid);

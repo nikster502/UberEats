@@ -15,7 +15,6 @@ class Menu extends Component {
         const classes = classNames({
             btn: true,
             "btn--color": color,
-
         });
         return (
 
@@ -46,7 +45,6 @@ class Menu extends Component {
                     <Button children = 'Sign in' white />
                     <Button children = 'Register' black/>
                 </div>
-
                     <MediaQuery query="(min-device-width: 480px)">
                         <Busket/>
                     </MediaQuery>
